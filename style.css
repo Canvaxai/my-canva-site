@@ -31,7 +31,7 @@ body {
 .category-card-box {
     display: block;
     background: #fff;
-    border: 2px solid #ddd; /* 線で囲む */
+    border: 2px solid #ddd;
     border-radius: 12px;
     padding: 30px;
     text-decoration: none;
@@ -44,7 +44,7 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 .card-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 0;
     color: #1a2a3a;
     border-bottom: 2px solid #f39c12;
@@ -54,42 +54,28 @@ body {
     list-style: none;
     padding: 15px 0;
     margin: 0;
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 0.85rem;
+    color: #666;
 }
-.card-preview li { padding: 4px 0; }
 .range-text { font-weight: bold; color: #f39c12; margin-top: 5px; }
 .btn-detail {
     display: inline-block;
     color: #f39c12;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
-/* Chapter Full List Page */
-.breadcrumb { padding: 20px 0; }
-.breadcrumb a { color: #f39c12; text-decoration: none; font-weight: bold; }
+/* Post Content Styling */
+.post-content h1 { font-size: 1.8rem; color: #1a2a3a; margin-bottom: 30px; }
+.post-content h2 { font-size: 1.4rem; color: #1a2a3a; margin-top: 40px; }
+.post-content h3 { font-size: 1.2rem; color: #1a2a3a; margin-top: 30px; }
+.post-content p { margin-bottom: 20px; font-size: 1.05rem; }
 
-.full-article-list { display: flex; flex-direction: column; gap: 10px; padding-bottom: 100px; }
-.full-article-list a {
-    display: block;
-    background: #fff;
-    padding: 15px 20px;
-    border: 1px solid #eee;
-    text-decoration: none;
-    color: #333;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-.full-article-list a:hover {
-    background: #fff9f0;
-    border-color: #f39c12;
-    padding-left: 25px;
+/* Footer Sub Link Styling */
+.footer-sub-link a:hover {
+    color: #f39c12 !important;
+    text-decoration: underline !important;
 }
 
 /* Footer */
-.main-footer { text-align: center; padding: 40px 0; background: #f8f8f8; color: #777; font-size: 0.9rem; }
-
-/* CTA */
-.cta-inner { text-align: center; padding: 40px; background: #fff9f0; border: 2px dashed #f39c12; border-radius: 12px; margin-bottom: 50px; }
-.cta-button { background: #f39c12; color: #fff; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; }
+.main-footer { text-align: center; padding: 60px 0; background: #f8f8f8; color: #999; font-size: 0.8rem; }
