@@ -1,105 +1,84 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>14. AIによるインフォグラフィック生成と視覚的SEO | Zero-Cost SEO 100本ノック</title>
-    <meta name="description" content="AIを活用して複雑なデータを視覚化し、インフォグラフィックを自動生成する手法を解説。画像の検索流入（画像SEO）を強化し、SNSでの拡散力を最大化する視覚戦略を詳説します。">
-    <link rel="canonical" href="https://tomokazu-hoshi.github.io/14.html">
-    
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="14. AIによるインフォグラフィック生成と視覚的SEO">
-    <meta property="og:description" content="データは「見る」ものへ。AIが切り拓くインフォグラフィックの新境地。">
-    <meta property="og:image" content="https://tomokazu-hoshi.github.io/images/ogp.png">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "14. AI-Generated Infographics and Visual SEO",
-      "author": { "@type": "Person", "name": "星 友和" },
-      "publisher": { "@type": "Organization", "name": "Zero-Cost SEO" },
-      "image": "https://tomokazu-hoshi.github.io/images/ogp.png",
-      "datePublished": "2026-03-22T08:00:00+09:00"
-    }
-    </script>
-
-    <style>
-        :root { --main-blue: #002b5b; --accent-orange: #ff9900; --bg-light: #f4f7f9; }
-        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; line-height: 1.8; color: #333; margin: 0; padding: 0; background: #fff; }
-        .container { max-width: 850px; margin: 0 auto; padding: 0 25px; }
-        
-        /* パンくずリスト */
-        .breadcrumb { padding: 20px 0; font-size: 0.85rem; color: #666; }
-        .breadcrumb a { color: var(--main-blue); text-decoration: none; font-weight: bold; }
-
-        /* 記事ヘッダー */
-        header { margin-bottom: 40px; border-bottom: 4px solid var(--main-blue); padding-bottom: 20px; }
-        .article-num { color: var(--accent-orange); font-weight: bold; font-size: 1.2rem; display: block; }
-        h1 { font-size: 2.2rem; color: var(--main-blue); margin: 5px 0; }
-
-        /* 本文エリア */
-        .entry-content { font-size: 1.15rem; letter-spacing: 0.02em; }
-        .entry-content p { margin-bottom: 1.5em; }
-
-        /* ナビゲーション（次へ・前へ） */
-        .article-nav { display: flex; justify-content: space-between; gap: 15px; margin: 60px 0; padding-top: 30px; border-top: 1px solid #eee; }
-        .article-nav a { flex: 1; text-align: center; padding: 18px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; font-size: 1rem; }
-        .btn-prev { background: #f0f0f0; color: #555; border: 1px solid #ddd; }
-        .btn-top { background: #fff; color: var(--main-blue); border: 1px solid var(--main-blue); }
-        .btn-next { background: var(--main-blue); color: #fff; }
-        .article-nav a:hover { opacity: 0.8; transform: translateY(-2px); }
-
-        @media (max-width: 600px) { .article-nav { flex-direction: column; } h1 { font-size: 1.8rem; } }
-    </style>
+    <title>14. レスポンシブデザインの必須条件 | Zero-Cost SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
-    <nav class="breadcrumb">
-        <a href="/">TOP</a> ＞ <span id="category-name">基盤構築と基本戦略</span> ＞ 14. AIによるインフォグラフィック生成と視覚的SEO
-    </nav>
+<header class="main-header">
+    <div class="container">
+        <h1>Zero-Cost SEO</h1>
+    </div>
+</header>
 
-    <header>
-        <span class="article-num">NO.14</span>
-        <h1>AIによるインフォグラフィック生成と視覚的SEO</h1>
-    </header>
+<main class="container">
+    <a href="chapter1.html" class="back-link">← 第1章 目次へ戻る</a>
+    
+    <article class="post-content">
+        <h1>14. レスポンシブデザインの必須条件</h1>
+        <p>現在、ウェブサイトへのアクセスの大半はスマートフォン経由です。PCでもスマホでも、デバイスの画面サイズに合わせてレイアウトが最適化される「レスポンシブデザイン」は、SEOにおいて選択肢ではなく「必須条件」となっています。</p>
+        
+        <h2>ワンソース・マルチデバイスの利点</h2>
+        <p>レスポンシブデザインの最大の利点は、1つのHTML（ワンソース）で全てのデバイスに対応できることです。これにより、Googleはサイトの情報を効率的にインデックスでき、リンクの評価も1つのURLに集約されます。Zero-Cost SEOでは、CSSのメディアクエリを駆使し、最小限のコードで最大限のモバイル体験（UX）を実現することを目指します。</p>
 
-    <article class="entry-content">
-        <p>テキスト中心のコンテンツが溢れる現代において、一目で情報を理解させる「図解（インフォグラフィック）」の価値は高まり続けています。Zero-Cost SEOでは、AIを用いてプロレベルのデザインを自動生成し、読者の理解度を高めると同時に、Google画像検索からの流入を飛躍的に増加させる戦略をとります。</p>
-        <p>AIを使えば、箇条書きのテキストデータから、配色やレイアウトが最適化された図解を瞬時に作成可能です。作成した画像をalt属性や適切なファイル名で最適化し、PinterestやSNSでの拡散を狙うことで、被リンク獲得にも貢献する「資産性の高い画像コンテンツ」の作り方を解説します。</p>
+        <h2>指先で操作する読者への配慮</h2>
+        <p>モバイルフレンドリーなサイトとは、単にサイズが合うだけではありません。ボタンの押しやすさ（タップターゲットの確保）、文字の読みやすさ、ズームせずとも情報が完結するレイアウトなど、指先で操作する読者のストレスを排除することが、Googleからの高評価に繋がります。</p>
     </article>
 
-    <div class="article-nav">
-        <a id="link-prev" href="#" class="btn-prev">← 前の記事</a>
-        <a href="/" class="btn-top">目次へ戻る</a>
-        <a id="link-next" href="#" class="btn-next">次の記事を読む →</a>
+    <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
+        <a href="13.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">← 前のページへ</a>
+        <a href="15.html" style="text-decoration: none; color: #f39c12; font-weight: bold;">次のページへ →</a>
+    </nav>
+
+    <section class="article-footer-nav">
+        <h3>同じカテゴリー（第1章：基礎・環境構築編）の記事</h3>
+        <ul class="vertical-article-list">
+            <li><a href="01.html">1. Zero-Cost SEOの幕開け</a></li>
+            <li><a href="02.html">2. AIを軍師に迎える思考法</a></li>
+            <li><a href="03.html">3. 個人が資本に勝つための戦略</a></li>
+            <li><a href="04.html">4. GitHub Pagesを選ぶ理由</a></li>
+            <li><a href="05.html">5. 継続を力に変える習慣術</a></li>
+            <li><a href="06.html">6. 静的サイトジェネレーターの優位性</a></li>
+            <li><a href="07.html">7. ドメインの選定とブランド構築</a></li>
+            <li><a href="08.html">8. サーバーレス運営のコストメリット</a></li>
+            <li><a href="09.html">9. Gitによるコンテンツ管理の初歩</a></li>
+            <li><a href="10.html">10. GitHub Pages의 爆速設定</a></li>
+            <li><a href="11.html">11. セキュリティとしての静的配信</a></li>
+            <li><a href="12.html">12. HTML/CSSのSEO最適化</a></li>
+            <li><a href="13.html">13. 表示速度が順位に与える影響</a></li>
+            <li><a href="14.html">14. レスポンシブデザインの必須条件</a></li>
+            <li><a href="15.html">15. モバイルファーストインデックス対応</a></li>
+        </ul>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="index.html" style="color: #666; text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid #ddd;">
+                他のカテゴリーの記事を読む（トップページへ戻る）
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div style="margin-bottom: 20px;">
+            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.75rem;">
+                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
+            </a>
+        </div>
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
-</div>
-
-<script>
-    const filename = window.location.pathname.split('/').pop() || '14.html';
-    const currentNum = parseInt(filename.replace(/[^0-9]/g, ''));
-
-    if (!isNaN(currentNum)) {
-        const prev = document.getElementById('link-prev');
-        const next = document.getElementById('link-next');
-
-        if (currentNum > 1) {
-            prev.href = (currentNum - 1).toString().padStart(2, '0') + ".html";
-        } else {
-            prev.style.display = 'none';
-        }
-
-        if (currentNum < 100) {
-            next.href = (currentNum + 1).toString().padStart(2, '0') + ".html";
-        } else {
-            next.style.display = 'none';
-        }
-    }
-</script>
+</footer>
 
 </body>
 </html>
