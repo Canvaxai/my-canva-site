@@ -10,7 +10,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>23. 箇条書きと強調：AIに視認性を高めさせる方法 | Zero-Cost SEO</title>
+    <title>23. 内部リンクの自動設計：AIでサイトの回遊性を高める | Zero-Cost SEO</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,6 +19,7 @@
 <header class="main-header">
     <div class="container">
         <h1>Zero-Cost SEO</h1>
+        <p>技術とAIで、コストゼロの資産サイトを構築する</p>
     </div>
 </header>
 
@@ -26,14 +27,26 @@
     <a href="chapter2.html" class="back-link">← 第2章 目次へ戻る</a>
     
     <article class="post-content">
-        <h1>23. 箇条書きと強調：AIに視認性を高めさせる方法</h1>
-        <p>Webサイトの読者は、一字一句を丁寧に読み込むことは稀です。多くの場合、自分が必要な情報を探してページを「スキャン」しています。AIを活用して、重要なポイントを一目で理解できる「箇条書き」や「強調」に変換し、読者の離脱を防ぎながら、滞在時間を有効なものに変えましょう。</p>
+        <h1>23. 内部リンクの自動設計：AIでサイトの回遊性を高める</h1>
+        <p>記事を一つ読んで満足して帰ってしまう読者を、いかにして「次の記事」へ誘導するか。この「回遊性」を高める鍵が、適切な内部リンクの配置です。内部リンクは読者の利便性を高めるだけでなく、検索エンジンのクローラーがサイト内を巡回しやすくする役割も果たします。AIを使って、文脈に沿った「外さない」リンク設計を自動化しましょう。</p>
 
-        <h2>AIに「要約と構造化」を依頼する</h2>
-        <p>長い解説文を作成した後は、AIに「この段落の要点を3つの箇条書きにまとめて」と指示しましょう。文章を箇条書き（<code>&lt;ul&gt;</code>や<code>&lt;ol&gt;</code>）に変換することで、読者の視線が止まりやすくなり、情報の理解度が劇的に向上します。また、手順を説明する際は「順序立てたリスト（1, 2, 3...）」にするよう指示することで、読者は次に何をすべきかを迷わず把握できるようになります。視覚的なリズムを作ることは、SEOにおけるユーザー体験（UX）の向上に直結します。</p>
+        [Image showing a network of internal links connecting relevant content nodes within a website]
 
-        <h2>強調（太字）の黄金ルールをAIに適用する</h2>
-        <p>どこもかしこも太字にしてしまうと、結局どこが重要かわからなくなります。AIにリライトを依頼する際、「読者がここだけを拾い読みしても、内容の要旨が伝わる場所に限定して太字（<code>&lt;strong&gt;</code>）を適用して」とプロンプトを与えてください。AIは文脈を理解しているため、キーワードが含まれる重要な一文や、ベネフィットが語られている箇所を正確に特定できます。適切な強調は、読者を記事の深部へと導く「道標」となり、結果として検索エンジンからの評価（ポジティブなユーザーシグナル）を底上げすることになります。</p>
+        <h2>文脈（コンテキスト）に沿ったリンク提案</h2>
+        <p>単に関連記事を並べるだけでは、読者はクリックしてくれません。大切なのは「この記事を読んでいる今、次に何を知りたくなるか」という文脈の予測です。AIに執筆中の原稿を読み込ませ、以下の観点でリンク先を提案させます。</p>
+        <ul>
+            <li><strong>補足情報の提示:</strong> 専門用語や複雑な概念について、より詳しく解説している別記事へのリンク。</li>
+            <li><strong>次のステップの案内:</strong> 「理論を学んだら次は実践」というように、読者の行動フェーズに合わせた誘導。</li>
+            <li><strong>トピッククラスターの強化:</strong> メイン記事とサブ記事を相互に繋ぎ、サイト全体の専門性をアピールする構造作り。</li>
+        </ul>
+
+        <h2>AIへの指示：最適なアンカーテキストの作成</h2>
+        <p>「こちらをクリック」といった曖昧なアンカーテキストは、SEO効果が低いだけでなく、読者も内容をイメージしにくいため敬遠されます。AIに対し、「リンク先の記事内容を要約し、読者が思わずクリックしたくなるような、キーワードを含む具体的なアンカーテキストを作成して」と指示します。
+        例えば、「SEOの基本についてはこちら」よりも「【初心者必見】3ヶ月でアクセスを倍増させるSEOの基本ロードマップ」の方が、圧倒的に高いクリック率を記録します。</p>
+
+        
+
+        <p>内部リンクを最適化することで、サイト全体の滞在時間が延び、直帰率が下がります。これはGoogleから「非常に価値の高いサイト」と見なされる強力なシグナルとなります。インフラ、コンテンツ、そして導線。これらが整ったら、次は「読者の満足度」を決定づける最終要素、画像や図解の活用術について進みましょう。</p>
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
@@ -42,28 +55,17 @@
     </nav>
 
     <section class="article-footer-nav">
-        <h3>同じカテゴリー（第2章：AIコンテンツ編）の記事</h3>
+        <h3>同じカテゴリー（第2章：AIコンテンツ・エンジニアリング編）の記事</h3>
         <ul class="vertical-article-list">
-            <li><a href="16.html">16. AIライティング：一撃で読者を惹きつける構成案</a></li>
-            <li><a href="17.html">17. 読者の「悩み」をAIで深掘りするリサーチ法</a></li>
-            <li><a href="18.html">18. 共起語の自然な挿入：AIをSEO専門家にする指示</a></li>
-            <li><a href="19.html">19. 導入文の極意：3秒で読者の心を掴むAI技術</a></li>
-            <li><a href="20.html">20. PREP法：AIに出力させる納得感のある文章</a></li>
-            <li><a href="21.html">21. 見出し(Hタグ)に潜ませるキーワードの力</a></li>
-            <li><a href="22.html">22. AIによるファクトチェック：情報の信頼性を担保する</a></li>
-            <li><a href="23.html">23. 箇条書きと強調：AIに視認性を高めさせる方法</a></li>
-            <li><a href="24.html">24. AI生成文を「人間の声」に変えるリライト術</a></li>
-            <li><a href="25.html">25. 専門用語のAI翻訳：誰にでも伝わる言葉の選び方</a></li>
-            <li><a href="26.html">26. ストーリーテリング：AIで感情を動かす技術</a></li>
-            <li><a href="27.html">27. 比較記事の公平性をAIで担保する構成案</a></li>
-            <li><a href="28.html">28. 画像alt属性の自動生成：AIを視覚の補助にする</a></li>
-            <li><a href="29.html">29. AIプロンプトの再利用：高品質を維持する「型」</a></li>
-            <li><a href="30.html">30. 内部リンクの文言：AIに最適な導線を作らせる</a></li>
-            <li><a href="31.html">31. 独自性(Originality)のAI付加術：自分の色を足す</a></li>
-            <li><a href="32.html">32. ターゲットペルソナの精密設定：AIを読者にする</a></li>
-            <li><a href="33.html">33. AIへの効果的なフィードバック：精度を極限まで上げる</a></li>
-            <li><a href="34.html">34. 長文記事を飽きさせない緩急とAIディレクション</a></li>
-            <li><a href="35.html">35. 第2章まとめ：AIを真の執筆パートナーにする</a></li>
+            <li><a href="16.html">16. AIコンテンツ・エンジニアリングの極意</a></li>
+            <li><a href="17.html">17. 読者の検索意図をAIで完璧に解読する</a></li>
+            <li><a href="18.html">18. 心を動かすAIライティング：共感の設計図</a></li>
+            <li><a href="19.html">19. ファクトチェック：AIの嘘を見抜く技術</a></li>
+            <li><a href="20.html">20. 競合サイトをAIで分析し、勝てる構成案を作る</a></li>
+            <li><a href="21.html">21. 読了率を高める冒頭文の設計：AIと作るフック</a></li>
+            <li><a href="22.html">22. 専門性を担保する：AIによるデータ引用とリサーチ術</a></li>
+            <li><a href="23.html">23. 内部リンクの自動設計：AIでサイトの回遊性を高める</a></li>
+            <li><a href="24.html">24. 画像・図解の力：AI生成画像で視認性を最大化する</a></li>
         </ul>
 
         <div style="margin-top: 40px; text-align: center;">
@@ -76,12 +78,7 @@
 
 <footer class="main-footer">
     <div class="container">
-        <div style="margin-bottom: 20px;">
-            <a href="hosting-comparison-guide.html" style="color: #bbb; text-decoration: none; font-size: 0.75rem;">
-                Webサイト構築における無料と有料の真実：GitHubからWordPressへの移行ガイド
-            </a>
-        </div>
-        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+        <p>&copy; 2026 Zero-Cost SEO</p>
     </div>
 </footer>
 
