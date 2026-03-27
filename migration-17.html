@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17. サイト速度を極限まで高めるキャッシュ設定と画像軽量化 | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* パンくずリスト */
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 20px; color: #7f8c8d; }
+        .breadcrumb a { text-decoration: none; color: #3498db; }
+
+        /* 章のイントロ */
+        .chapter-intro-mini { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 25px; }
+        .chapter-intro-mini small { font-size: 0.75rem; opacity: 0.9; }
+        .chapter-intro-mini h2 { font-size: 1.1rem; margin: 5px 0; }
+        .chapter-intro-mini p { font-size: 0.85rem; opacity: 0.9; margin-top: 5px; }
+
+        /* 記事コンテンツ */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.05rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        
+        /* アクションBOX */
+        .action-box { background: #e1f5fe; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .action-box strong { color: #0288d1; display: block; margin-bottom: 5px; }
+
+        /* ナビボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #eee; color: #666; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 章内リスト（カード方式） */
+        .chapter-list-mini { margin-top: 30px; }
+        .chapter-list-mini h3 { font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 下部目次リンク */
+        .footer-back-link { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-back-link a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <nav class="breadcrumb">
+        <a href="index.html">TOP</a> ＞ 
+        <a href="migration-guide.html">移行ガイド</a> ＞ 
+        <a href="migration-ch5.html">第5章</a>
+    </nav>
+
+    <section class="chapter-intro-mini">
+        <small>第5章：機能拡張と最適化編</small>
+        <h2>サイト速度を極限まで高めるキャッシュ設定と画像軽量化</h2>
+        <p>WordPressの弱点である「動的生成」をカバーし、GitHub Pages時代以上の爆速体験を目指します。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>17. サイト速度を極限まで高めるキャッシュ設定と画像軽量化</h1>
+        <p>GitHub Pagesは最初から「静的なHTML」を配信していたため高速でしたが、WordPressはアクセスがあるたびにデータベースへ問い合わせに行く「動的」なシステムです。そのため、何も対策をしないと表示速度が落ちてしまいます。これを解決するのが「キャッシュ」と「画像最適化」です。</p>
+        
+        <h3>1. ページキャッシュの導入：疑似的な静的化</h3>
+        <p>「ページキャッシュ」とは、一度生成したHTMLをサーバーに保存しておき、次の訪問者にはそれをそのまま見せる技術です。これにより、WordPressをGitHub Pagesと同じ「静的サイト」のような速さで配信できます。「WP Rocket（有料）」や「WP Fastest Cache（無料）」などのプラグインで簡単に設定可能です。</p>
+
+        <h3>2. 画像の次世代形式（WebP）への自動変換</h3>
+        <p>サイトの重さの8割は画像です。WordPressではプラグイン「EWWW Image Optimizer」などを使うことで、アップロードした画像を自動的に軽量なWebP形式へ変換し、画質を保ったままファイルサイズを半分以下に削減できます。</p>
+
+        <h3>3. サーバー側の高速化機能をフル活用</h3>
+        <p>ConoHa WINGやエックスサーバーなどの高速サーバーには、独自のキャッシュ機能（WEXALやLiteSpeedなど）が備わっています。プラグインによる対策とサーバー側の設定を組み合わせることで、GoogleのPageSpeed Insightsで90点以上を叩き出す「資産サイト」が完成します。</p>
+
+        <div class="action-box">
+            <strong>💡 この記事のあとのステップ：</strong>
+            <p style="font-size: 0.85rem; margin-top: 5px;">まずは PageSpeed Insights で現在の自分のWordPressの点数を測り、課題（画像が大きい、サーバーの応答が遅いなど）を確認しましょう。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-16.html" class="btn-nav btn-prev">← 前へ</a>
+        <a href="migration-18.html" class="btn-nav btn-next">次へ →</a>
+    </nav>
+
+    <section class="chapter-list-mini">
+        <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d;">第5章の記事一覧</h3>
+        <div class="card-list">
+            <a href="migration-17.html" class="mini-card current"><span>17</span> 速度極限化：キャッシュと画像軽量化</a>
+            <a href="migration-18.html" class="mini-card"><span>18</span> 高度な分析：ABテストとCV計測</a>
+            <a href="migration-19.html" class="mini-card"><span>19</span> チーム運営：権限管理と自動化</a>
+            <a href="migration-20.html" class="mini-card"><span>20</span> 運用マインド：サーバー管理への転換</a>
+        </div>
+    </section>
+
+    <div class="footer-back-link">
+        <a href="migration-guide.html">
+            ← WordPress移行ガイド目次へ戻る
+        </a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
