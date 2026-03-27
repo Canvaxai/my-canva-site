@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20. サーバーレス環境からサーバー環境への「運用マインド」の切り替え | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. パンくずリスト */
+        .breadcrumb { font-size: 0.8rem; margin-bottom: 20px; color: #7f8c8d; }
+        .breadcrumb a { text-decoration: none; color: #3498db; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-mini { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 25px; }
+        .chapter-intro-mini small { font-size: 0.75rem; opacity: 0.9; }
+        .chapter-intro-mini h2 { font-size: 1.1rem; margin: 5px 0; }
+        .chapter-intro-mini p { font-size: 0.85rem; opacity: 0.9; margin-top: 5px; }
+
+        /* 3. 記事コンテンツ */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.05rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        .post-content strong { color: #e67e22; }
+        
+        /* アクションBOX */
+        .action-box { background: #e1f5fe; border: 1px solid #b3e5fc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .action-box strong { color: #0288d1; display: block; margin-bottom: 5px; }
+
+        /* 4. ナビボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #eee; color: #666; }
+        .btn-next { background: #27ae60; color: white; } /* 章の終わりは緑 */
+
+        /* 5. 章内リスト（カード方式） */
+        .chapter-list-mini { margin-top: 30px; }
+        .chapter-list-mini h3 { font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 下部メニューリンク */
+        .footer-menu-link { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-menu-link a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <nav class="breadcrumb">
+        <a href="index.html">TOP</a> ＞ 
+        <a href="migration-guide.html">移行ガイド</a> ＞ 
+        <a href="migration-ch5.html">第5章</a>
+    </nav>
+
+    <section class="chapter-intro-mini">
+        <small>第5章：機能拡張と最適化編</small>
+        <h2>運用マインドの切り替え：サーバーレスからサーバー環境へ</h2>
+        <p>「放置できるサイト」から「育てるサイト」へ。WordPressという生き物を健やかに保つためのオーナーシップを学びます。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>20. サーバーレス環境からサーバー環境への「運用マインド」の切り替え</h1>
+        <p>GitHub Pagesは「静的なファイルを置くだけ」のサーバーレスな環境でした。一度公開してしまえば、セキュリティやアップデートを気にする必要はほとんどありませんでした。しかし、WordPressは違います。あなたは今、<strong>「Webサイトのオーナー」であると同時に「システムの管理者」</strong>でもあります。</p>
+        
+        <h3>1. アップデートは「義務」である</h3>
+        <p>WordPress本体、テーマ、プラグインは頻繁に更新されます。これらを放置することは、家の鍵を開けっ放しにするのと同じです。GitHub Pages時代には存在しなかった「脆弱性」というリスクと向き合い、週に一度は管理画面を開いて最新の状態に保つ習慣をつけましょう。</p>
+
+        <h3>2. バックアップは自分の責任</h3>
+        <p>GitHubには「コミット履歴」という強力な復元機能がありましたが、WordPressのデータはデータベースに保存されています。サーバーの不具合や操作ミスでデータが消えたとき、助けてくれるのは<strong>「あなたが設定したバックアップ」</strong>だけです。自動バックアップが正常に動いているか、定期的に確認してください。</p>
+
+        <h3>3. リソース（サーバー負荷）の意識</h3>
+        <p>GitHub Pagesではアクセスが急増してもGitHubが処理してくれましたが、今はあなたのレンタルサーバーが処理を担っています。重すぎるプラグインを大量に入れたり、巨大な画像をそのまま上げたりすると、サイトが重くなるだけでなく、サーバーから制限を受けることもあります。常に「軽量な運営」を心がけましょう。</p>
+
+        <h3>4. 「自由」と「責任」のトレードオフ</h3>
+        <p>管理の手間は増えましたが、その分、GitHub Pagesでは不可能だった「全てのコントロール」が手に入りました。この環境を活かして、サイトをどこまでも成長させていけるのは、オーナーであるあなただけです。</p>
+
+        <div class="action-box">
+            <strong style="color: #0288d1;">💡 第5章の総仕上げアクション：</strong>
+            <p style="font-size: 0.85rem; margin-top: 5px;">WordPressの「更新」画面を開き、全てが最新になっているか確認しましょう。また、週に一度「サイトの健康診断」をする日をカレンダーに登録してみてください。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-19.html" class="btn-nav btn-prev">← 前へ</a>
+        <a href="migration-ch6.html" class="btn-nav btn-next">第6章 リストへ →</a>
+    </nav>
+
+    <section class="chapter-list-mini">
+        <h3 style="font-size: 0.9rem; margin-bottom: 15px; color: #7f8c8d;">第5章：記事一覧</h3>
+        <div class="card-list">
+            <a href="migration-17.html" class="mini-card"><span>17</span> 速度極限化：キャッシュと画像軽量化</a>
+            <a href="migration-18.html" class="mini-card"><span>18</span> 高度な分析：ABテストとCV計測</a>
+            <a href="migration-19.html" class="mini-card"><span>19</span> チーム運営：権限管理と自動化</a>
+            <a href="migration-20.html" class="mini-card current"><span>20</span> 運用マインド：サーバー管理への転換</a>
+        </div>
+    </section>
+
+    <div class="footer-menu-link">
+        <a href="migration-guide.html">
+            ← WordPress移行ガイド目次へ戻る
+        </a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
