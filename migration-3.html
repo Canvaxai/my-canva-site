@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. 移行すべき数値基準：PV数と収益性のデッドライン | WordPress移行ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f0f7ff; color: #333; line-height: 1.6; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        
+        /* 1. リンク */
+        .top-nav-link { display: block; margin-bottom: 15px; text-decoration: none; color: #3498db; font-size: 0.85rem; font-weight: bold; }
+
+        /* 2. 章のタイトルと説明 */
+        .chapter-intro-box { background: #3498db; color: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; }
+        .chapter-intro-box small { font-size: 0.75rem; opacity: 0.9; display: block; margin-bottom: 5px; }
+        .chapter-intro-box h2 { font-size: 1.2rem; margin: 0; }
+        .chapter-intro-box p { font-size: 0.85rem; margin-top: 10px; opacity: 0.95; line-height: 1.4; }
+
+        /* 3. 記事本文 */
+        .post-content { background: white; padding: 25px 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .post-content h1 { font-size: 1.4rem; color: #2c3e50; margin-bottom: 20px; border-bottom: 3px solid #f0f7ff; padding-bottom: 10px; }
+        .post-content h3 { font-size: 1.1rem; color: #3498db; margin: 25px 0 10px; border-left: 4px solid #3498db; padding-left: 10px; }
+        .post-content p { margin-bottom: 15px; font-size: 0.95rem; }
+        .post-content table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.85rem; }
+        .post-content th, .post-content td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        .post-content th { background: #f8f9fa; }
+
+        /* アクションBOX */
+        .action-box { background: #fff9db; border: 1px solid #f59f00; padding: 15px; border-radius: 8px; margin: 25px 0; }
+        .action-box strong { color: #e67e22; display: block; margin-bottom: 5px; font-size: 0.9rem; }
+        .action-box p { font-size: 0.85rem; margin: 0; color: #666; }
+
+        /* 4. 前へ・次へボタン */
+        .post-nav-buttons { display: flex; gap: 10px; margin-bottom: 40px; }
+        .btn-nav { flex: 1; text-align: center; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .btn-prev { background: #3498db; color: white; }
+        .btn-next { background: #3498db; color: white; }
+
+        /* 5. 章の記事リスト */
+        .mini-card-list { margin-top: 30px; }
+        .mini-card-list h3 { font-size: 0.9rem; color: #7f8c8d; margin-bottom: 15px; }
+        .mini-card { display: flex; align-items: center; background: white; border: 1px solid #e1e8ed; padding: 12px 15px; border-radius: 8px; text-decoration: none; color: #333; margin-bottom: 10px; font-size: 0.85rem; }
+        .mini-card span { color: #3498db; font-weight: bold; margin-right: 10px; }
+        .mini-card.current { border: 2px solid #3498db; background: #f0faff; }
+
+        /* 6. 目次へ戻る */
+        .footer-nav { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .footer-nav a { color: #3498db; font-weight: bold; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <a href="migration-guide.html" class="top-nav-link">← WordPress移行ガイド メニュー</a>
+
+    <section class="chapter-intro-box">
+        <small>第1章：移行の決断と戦略編</small>
+        <h2>移行のベストタイミングを知る</h2>
+        <p>「いつ移行すべきか？」という悩みに対する答えは、感覚ではなく数値にあります。資産としての健全性を守るための指標を確認しましょう。</p>
+    </section>
+
+    <article class="post-content">
+        <h1>3. 移行すべき数値基準：PV数と収益性のデッドライン</h1>
+        <p>GitHub PagesからWordPressへ移行するタイミングは、早すぎると維持費が負担になり、遅すぎると移行作業のコスト（手間）が膨大になります。以下の3つの指標を目安にしてください。</p>
+        
+        <h3>1. PV数（アクセス規模）の基準</h3>
+        <p><strong>月間 3,000〜10,000 PV</strong>が、移行を検討すべき最初のデッドラインです。この規模になると、読者の反応が安定し、サイト内検索や関連記事の最適化による「回遊率の向上」が大きな収益差を生むようになります。</p>
+
+        <h3>2. 収益性の基準</h3>
+        <p><strong>月額 1,000〜3,000 円</strong>の収益が発生し始めたら、即座に移行を推奨します。これはレンタルサーバー代（約1,000円/月）を自活できている状態です。ここからは「コスト」ではなく「再投資」として、サイト環境を整える段階に入ります。</p>
+
+        <h3>3. 記事数と修正頻度の基準</h3>
+        <p>100記事を超えてくると、過去記事のメンテナンス（リライト）が重要になります。GitHub Pagesでの手動リライトに限界を感じたら、それがあなたのタイミングです。以下の表を参考にしてください。</p>
+
+        <table>
+            <tr>
+                <th>指標</th>
+                <th>GitHub継続</th>
+                <th>WordPress推奨</th>
+            </tr>
+            <tr>
+                <td>PV/月</td>
+                <td>3,000以下</td>
+                <td>3,000以上</td>
+            </tr>
+            <tr>
+                <td>収益/月</td>
+                <td>1,000円以下</td>
+                <td>1,000円以上</td>
+            </tr>
+            <tr>
+                <td>更新頻度</td>
+                <td>週1回程度</td>
+                <td>毎日〜週3回</td>
+            </tr>
+        </table>
+
+        <div class="action-box">
+            <strong>💡 この記事のあとのアクション：</strong>
+            <p>Google Analytics（GA4）を開き、直近1ヶ月のPV数を確認してください。もし3,000PVを超えているなら、準備を始める絶好のタイミングです。</p>
+        </div>
+    </article>
+
+    <nav class="post-nav-buttons">
+        <a href="migration-2.html" class="btn-nav btn-prev">← 前の記事へ</a>
+        <a href="migration-4.html" class="btn-nav btn-next">次の記事へ →</a>
+    </nav>
+
+    <section class="mini-card-list">
+        <h3>第1章：記事一覧</h3>
+        <a href="migration-1.html" class="mini-card"><span>1</span> GitHub Pagesの限界とWordPressの優位性</a>
+        <a href="migration-2.html" class="mini-card"><span>2</span> 「自分の時間」を「お金」で買う：レバレッジの考え方</a>
+        <a href="migration-3.html" class="mini-card current"><span>3</span> 移行すべき数値基準：PV数と収益性のデッドライン</a>
+        <a href="migration-4.html" class="mini-card"><span>4</span> WordPress移行で得られる3つの武器</a>
+    </section>
+
+    <div class="footer-nav">
+        <a href="migration-guide.html">← WordPress移行ガイド目次へ戻る</a>
+    </div>
+</main>
+
+<footer style="text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem;">
+    <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+</footer>
+
+</body>
+</html>
