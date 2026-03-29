@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H56XHD5MLW');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クローラビリティを激変させる内部リンク戦略 | Zero-Cost SEO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <h1>Zero-Cost SEO</h1>
+        <p>技術とAIで、コストゼロの資産サイトを構築する</p>
+    </div>
+</header>
+
+<main class="container">
+    <nav>
+        <a href="#" onclick="history.back(); return false;" class="back-link">← 第11回 本編へ戻る</a>
+    </nav>
+    
+    <article class="post-content">
+        <h1>クローラビリティを激変させる内部リンク戦略</h1>
+        <p>サイト内の記事同士をただ繋ぐだけでは不十分です。Googleのクローラーがスムーズに巡回し、かつ読者が「もっと読みたい」と思うような戦略的な内部リンクの配置術をマスターしましょう。これだけで、インデックス速度と検索順位に大きな差がつきます。</p>
+
+        <h2 style="border-left: 5px solid #3498db; padding-left: 15px;">1. アンカーテキストにキーワードを込める</h2>
+        <p>「こちらをクリック」や「この記事」といった曖昧な言葉でリンクを貼るのは、SEOにおいて最大の機会損失です。リンクになるテキスト（アンカーテキスト）には、必ず **リンク先の内容を表すキーワード** を含めてください。</p>
+        <ul>
+            <li><strong>悪い例：</strong> 詳細は<a href="#">こちら</a>をご覧ください。</li>
+            <li><strong>良い例：</strong> <a href="#">AIを使ったキーワード選定の具体的な手順</a>を確認してください。</li>
+        </ul>
+        <p>Googleのクローラーは、アンカーテキストを見て「リンク先に何が書いてあるか」を事前に理解します。公式の <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ja#use-links-wisely" target="_blank" rel="noopener">Google検索セントラル（外部リンク）</a> でも、説明的なテキストの使用が推奨されています。</p>
+
+        <h2 style="border-left: 5px solid #2ecc71; padding-left: 15px; margin-top: 40px;">2. AIでリンクの「相性」を診断する</h2>
+        <p>どの記事からどの記事へリンクを飛ばすべきか迷ったら、AIに診断させましょう。以下のプロンプトが有効です。</p>
+
+        <div style="background: #2d3436; color: #dfe6e9; padding: 20px; border-radius: 8px; margin: 20px 0; font-family: monospace; font-size: 0.9rem;">
+            <strong>【リンク特定プロンプト】</strong><br><br>
+            以下の2つの記事タイトルの関連性を、SEOの観点から100点満点で採点してください。また、記事Aの中に記事Bへのリンクを設置する場合、どのような文脈（一文）で挿入するのが最も自然で読者のためになるか、具体案を3つ提案してください。<br><br>
+            記事A：「[自分の記事タイトルA]」<br>
+            記事B：「[自分の記事タイトルB]」
+        </div>
+
+        <h2 style="border-left: 5px solid #f39c12; padding-left: 15px; margin-top: 40px;">3. 「孤立ページ」をゼロにするチェック</h2>
+        <p>どこからもリンクされていないページを「孤立ページ（オーファンページ）」と呼びます。クローラーが辿り着けないため、いつまでもインデックスされません。新しい記事を書いたら、必ず **「既存の古い記事」から新しい記事へリンクを貼る** 習慣をつけてください。これにより、サイト全体に新しい「血（リンクジュース）」が巡り始めます。</p>
+
+        <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin-top: 40px; border-radius: 8px;">
+            <h3 style="margin-top: 0; color: #e67e22;">🚀 今すぐやるべき4ステップ</h3>
+            <ol style="line-height: 1.8; font-size: 0.95rem; margin-bottom: 0;">
+                <li><strong>主要な10記事を選び、リンクが「こちら」になっていないか確認する</strong></li>
+                <li><strong>関連する記事同士を3つ以上のリンクで結びつける</strong></li>
+                <li><strong>AIに「読者が次に読みたくなる記事」を提案させる</strong></li>
+                <li><strong>設定が完了したら、第12回の「デザイン編」へ進む</strong></li>
+            </ol>
+        </div>
+    </article>
+
+    <div style="text-align: center; margin: 50px 0;">
+        <a href="#" onclick="history.back(); return false;" style="background: #3498db; color: white; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);">
+            ← リンク戦略を理解したので本編に戻る
+        </a>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
+    </div>
+</footer>
+
+</body>
+</html>
