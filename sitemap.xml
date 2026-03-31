@@ -1,4 +1,3 @@
-指摘の通り、URLが不足していました。01から100までの全記事、各移行記事、そして最新のガイドをすべて網羅した sitemap.xml の全文です。これをコピーして、現在のファイルを完全に上書きしてください。
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tomokazu-hoshi.github.io/index.html</loc></url>
@@ -153,5 +152,5 @@
   <url><loc>https://tomokazu-hoshi.github.io/search-intent-prompt-guide.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/ai-empathy-writing-guide.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/ai-fact-checking-guide.html</loc></url>
+  <url><loc>https://tomokazu-hoshi.github.io/ctr-optimization-prompt-guide.html</loc></url>
 </urlset>
-
