@@ -5,7 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* 画像に合わせて白背景に */
+    background-color: #fff;
 }
 
 .container {
@@ -42,32 +42,31 @@ body {
 }
 
 .tile-keyword {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin-bottom: 3px;
+    text-align: center;
 }
 
 .tile-desc {
     font-size: 0.7rem;
     opacity: 0.8;
+    text-align: center;
 }
 
 /* 記事コンテンツ */
-.post-content {
-    margin-top: 20px;
-}
-
 .post-content h1 {
     font-size: 1.6rem;
     color: #2c3e50;
     border-bottom: 2px solid #f39c12;
     padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .post-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     margin-top: 40px;
-    padding-left: 10px;
+    padding-left: 12px;
     border-left: 5px solid #f39c12;
 }
 
@@ -87,14 +86,21 @@ body {
     border-radius: 8px;
 }
 
-/* 記事ナビゲーション */
+.hint-box a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0366d6;
+}
+
+/* ナビゲーション */
 .back-link {
     display: inline-block;
     color: #f39c12;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .post-nav {
@@ -110,10 +116,10 @@ body {
     color: #f39c12;
     font-weight: bold;
     font-size: 0.85rem;
-    max-width: 45%;
+    max-width: 48%;
 }
 
-/* 画像スタイルの記事リスト（下部） */
+/* 記事リスト（画像スタイル反映） */
 .category-section {
     max-width: 700px;
     margin: 60px auto 0 auto;
@@ -166,6 +172,7 @@ body {
     padding: 30px 0;
     text-align: center;
     font-size: 0.8rem;
+    margin-top: 60px;
 }
 
 /* スマホ対応 */
