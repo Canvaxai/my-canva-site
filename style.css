@@ -1,148 +1,169 @@
-/* 基本設定 */
+/* =========================================
+   Zero-Cost SEO 共通スタイルシート
+   ========================================= */
+
+/* --- 基本設定 --- */
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.6;
-    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
 .container {
-    max-width: 600px; /* トップページに合わせた幅 */
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ヘッダー（トップページのデザインを固定） */
+/* --- ヘッダー --- */
 .main-header {
+    background-color: #ffffff;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
     text-align: center;
-    padding: 40px 0;
-    background: #2c3e50;
-    color: white;
-    border-radius: 0 0 20px 20px;
-    margin-bottom: 20px;
-}
-.main-header h1 {
-    font-size: 1.8rem;
-    margin: 0 0 10px 0;
-}
-.main-header p {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    margin: 0;
 }
 
-/* パンくずリスト */
-.breadcrumb {
-    font-size: 0.85rem;
+.main-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.main-header p {
+    margin: 5px 0 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* --- フッター --- */
+.main-footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-footer p {
+    margin: 0;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* --- 記事コンテンツ --- */
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.post-content h2 {
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #f39c12;
+    padding-left: 15px;
+    color: #333;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.post-content li {
+    margin-bottom: 10px;
+}
+
+/* --- 記事末尾のナビゲーション --- */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.post-nav a {
+    text-decoration: none;
+    color: #f39c12;
+    font-weight: bold;
+    flex: 1;
+}
+
+/* --- 💡追加・修正箇所: カテゴリー記事リスト (カード形式) --- */
+.article-footer-nav h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* リスト全体のスタイル */
+.article-footer-nav .vertical-article-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* 各リスト項目のスタイル */
+.article-footer-nav .vertical-article-list li {
     margin-bottom: 15px;
 }
-.breadcrumb a {
-    color: #f39c12;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-/* 2×2の4つの窓（タイルナビ） */
-.tile-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 30px;
-}
-.tile-item {
+/* カード(リンク)のスタイル */
+.article-footer-nav .vertical-article-list a {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
-    background: white;
-    border: 2px solid #f39c12;
-    border-radius: 12px;
     text-decoration: none;
-    color: #2c3e50;
-    transition: all 0.2s;
-    text-align: center;
-    min-height: 65px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-.tile-item:active { transform: scale(0.98); }
-.tile-text {
-    font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 1.4;
-}
-
-/* 記事コンテンツ */
-.post-content {
-    background: white;
-    padding: 25px;
+    background-color: #ffffff;
+    padding: 20px 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin-bottom: 40px;
-}
-.post-content h1 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    border-bottom: 2px solid #f39c12;
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-.post-content h2 {
-    font-size: 1.25rem;
-    margin-top: 30px;
-    padding-left: 10px;
-    border-left: 5px solid #f39c12;
-    color: #2c3e50;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* カード型記事リスト（第3章リスト） */
-.category-section {
-    margin-bottom: 60px;
+/* ホバー時のエフェクト */
+.article-footer-nav .vertical-article-list a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
-.category-title {
+
+/* 金色の数字のスタイル */
+.article-footer-nav .card-number {
+    color: #f39c12; /* 写真と同じ金色 */
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 50px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+/* 記事タイトルのスタイル */
+.article-footer-nav .card-title {
+    color: #333333;
     font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    flex-grow: 1;
 }
-.article-card-item {
-    margin-bottom: 12px;
-}
-.article-card-link {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 12px;
-    padding: 18px;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.2s;
-}
-.article-card-link:active { transform: scale(0.98); }
-.card-number {
+
+/* 矢印のスタイル */
+.article-footer-nav .card-arrow {
+    color: #cccccc;
     font-size: 1.4rem;
-    font-weight: bold;
-    color: #f39c12;
-    min-width: 45px;
-}
-.card-title {
-    flex: 1;
-    font-size: 0.95rem;
-    font-weight: bold;
-    padding: 0 10px;
-    color: #444;
-}
-.card-arrow {
-    color: #ccc;
-    font-size: 1rem;
-}
-
-/* フッター */
-.footer { text-align: center; padding: 40px 0; color: #999; font-size: 0.8rem; }
-
-@media (max-width: 480px) {
-    .tile-text { font-size: 0.75rem; }
-    .card-title { font-size: 0.85rem; }
+    font-family: Arial, sans-serif; /* 標準的な矢印にする */
 }
