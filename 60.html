@@ -14,16 +14,103 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        #full-screen-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(44, 62, 80, 0.98); color: white; z-index: 2000; display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
-        #full-screen-menu.open { display: flex; }
-        .menu-close { position: absolute; top: 30px; right: 30px; font-size: 2.5rem; cursor: pointer; color: #f39c12; line-height: 1; }
-        .menu-list { list-style: none; padding: 0; width: 80%; }
-        .menu-list li { margin: 20px 0; border-bottom: 1px solid #3e5871; padding-bottom: 10px; }
-        .menu-list a { color: white; text-decoration: none; font-size: 1.2rem; font-weight: bold; display: block; }
-        .menu-category { font-size: 0.8rem; color: #f39c12; display: block; margin-bottom: 5px; }
-        .search-trigger { display: flex; align-items: center; justify-content: center; background: #e67e22; color: white; padding: 12px 20px; border-radius: 30px; cursor: pointer; font-size: 1rem; border: none; margin: 15px auto; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: 0.2s; }
-        .migration-banner { display: block; background: linear-gradient(135deg, #3498db, #2980b9); color: white; text-align: center; padding: 20px; border-radius: 10px; text-decoration: none; margin: 30px 0; font-weight: bold; }
-        .post-image { max-width: 100%; height: auto; border: 1px solid #eee; border-radius: 8px; margin: 30px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        /* 全画面メニューのスタイル */
+        #full-screen-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 62, 80, 0.98); 
+            color: white;
+            z-index: 2000;
+            display: none; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #full-screen-menu.open {
+            display: flex;
+        }
+
+        .menu-close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: #f39c12;
+            line-height: 1;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            width: 80%;
+        }
+        .menu-list li {
+            margin: 20px 0;
+            border-bottom: 1px solid #3e5871;
+            padding-bottom: 10px;
+        }
+        .menu-list a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+        }
+        .menu-category {
+            font-size: 0.8rem;
+            color: #f39c12;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* 離脱防止用ヘッダーボタン */
+        .search-trigger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e67e22; 
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px; 
+            cursor: pointer;
+            font-size: 1rem;
+            border: none;
+            margin: 15px auto;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        .search-trigger:active {
+            transform: scale(0.95);
+        }
+
+        /* 移行ガイドバナー */
+        .migration-banner {
+            display: block;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+
+        /* 画像エリアのスタイル */
+        .post-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin: 30px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
@@ -45,16 +132,20 @@
     <div class="container">
         <h1>Zero-Cost SEO</h1>
         <p>技術とAIで、コストゼロの資産サイトを構築する</p>
-        <button class="search-trigger" onclick="toggleMenu()">🔍 お探しのページはこちら</button>
+        <button class="search-trigger" onclick="toggleMenu()">
+            🔍 お探しのページはこちら
+        </button>
     </div>
 </header> 
 
 <main class="container">
-    <nav><a href="chapter4.html" class="back-link">← 第4章 目次へ戻る</a></nav>
+    <nav>
+        <a href="chapter4.html" class="back-link">← 第4章 目次へ戻る</a>
+    </nav>
     
     <article class="post-content">
         <h1>60. コンテンツの一次情報化：独自の調査結果をAIで図解する</h1>
-        <p>AIが生成するテキストは「どこかで見たことのある内容」に陥りがちです。これを打破し、検索エンジンから「唯一無二の価値」として評価されるためには、独自の調査結果（一次情報）を盛り込むことが不可欠です。AIを強力なデザイナーとして活用し、独自のデータを魅力的な図解へと昇華させる手法を解説します。</p>
+        <p>AIが生成するテキストの限界を打破し、検索エンジンから「唯一無二の価値」として評価されるためには、独自の調査結果（一次情報）を盛り込むことが不可欠です。AIを強力なデザイナーとして活用し、データを魅力的な図解へと昇華させる手法を解説します。</p>
 
         <div style="background-color: #fff9db; border: 2px dashed #f39c12; padding: 20px; margin: 30px 0; border-radius: 8px;">
             <h3 style="margin-top: 0; color: #e67e22;">🚀 この記事のあとの作業工程</h3>
@@ -65,12 +156,12 @@
         </div>
 
         <h2>一次情報こそがAI時代の「最強の盾」</h2>
-        <p>GoogleのE-E-A-T評価において、実体験や独自調査に基づく情報は非常に高い価値を持ちます。この記事に含まれている図解が、情報の信憑性を飛躍的に高めます。</p>
+        <p>GoogleのE-E-A-T評価において、実体験や独自調査に基づく情報は非常に高い価値を持ちます。この記事に含まれている図解が、情報の信憑性を飛躍的に高め、他サイトとの差別化を決定づけます。</p>
 
         <img src="diagram60.png" alt="独自の調査データを図解に変換するプロセス" class="post-image">
 
         <h2>AIをデザイナーにしてデータを視覚化する</h2>
-        <p>視覚情報があることで、読者の滞在時間も向上し、SEOに良い影響を与えます。</p>
+        <p>視覚情報があることで、読者の滞在時間も向上し、SEOに良い影響を与えます。デザインの才能がなくても、AIに構造を指示するだけで、プロ級の視覚コンテンツを資産として積み上げることが可能です。</p>
 
         <div style="margin: 30px 0; padding: 20px; background: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 8px; font-size: 0.95rem;">
             <strong style="color: #0366d6;">💡 インフォグラフィック・エンジニアリング：</strong><br>
@@ -82,14 +173,37 @@
     </article>
 
     <nav class="post-nav" style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="59.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: left;">← [59. サイトの更新頻度]</a>
+        <a href="59.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: left;">← [59. サイトの更新頻度と鮮度]</a>
         <a href="61.html" style="text-decoration: none; color: #f39c12; font-weight: bold; flex: 1; text-align: right;">[61. 構造化データの実装] →</a>
     </nav>
+
+    <section class="article-footer-nav">
+        <h3>同じカテゴリー（第4章：E-E-A-Tと信頼性構築編）の記事</h3>
+        <ul class="vertical-article-list">
+            <li><a href="51.html">51. E-E-A-Tとは：AI時代の検索エンジンが求める信頼の正体</a></li>
+            <li><a href="52.html">52. 著者情報の拡充：AIに「あなた」という専門家を定義させる</a></li>
+            <li><a href="53.html">53. 「経験(Experience)」の証明：AIが書けない実体験の盛り込み方</a></li>
+            <li><a href="54.html">54. 専門性(Expertise)を高めるトピッククラスターの構築</a></li>
+            <li><a href="55.html">55. 権威性(Authoritativeness)の獲得：外部サイトからの言及と被リンク</a></li>
+            <li><a href="56.html">56. 信頼性(Trustworthiness)を高める運営者情報の書き方</a></li>
+            <li><a href="57.html">57. 引用と出典の明示：AI情報の正確性を担保する技術</a></li>
+            <li><a href="58.html">58. サイテーションの重要性：SNSでの言及がSEOに与える影響</a></li>
+            <li><a href="59.html">59. サイトの更新頻度と鮮度：AIでメンテナンスを自動化する</a></li>
+            <li><a href="60.html">60. コンテンツの一次情報化：独自の調査結果をAIで図解する</a></li>
+            <li><a href="61.html">61. 構造化データ（JSON-LD）の実装：検索エンジンに信頼を伝える</a></li>
+            <li><a href="62.html">62. 誤情報の排除と訂正：信頼を失わないためのAI検閲術</a></li>
+            <li><a href="63.html">63. ユーザーの声（UGC）の活用：信頼を客観的に証明する</a></li>
+            <li><a href="64.html">64. ドメインの信頼性を高める運用履歴と資産性</a></li>
+            <li><a href="65.html">65. 第4章まとめ：信頼が収益を永続的なものにする</a></li>
+        </ul>
+    </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <a href="https://tomokazu-hoshi.github.io/migration-guide.html" class="migration-banner">🚀 移行ガイド：GitHubからWordPressへ</a>
+        <a href="https://tomokazu-hoshi.github.io/migration-guide.html" class="migration-banner">
+            🚀 移行ガイド：GitHubからWordPressへ
+        </a>
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
 </footer>
