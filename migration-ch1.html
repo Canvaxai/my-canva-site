@@ -45,17 +45,17 @@
         .article-item-title { flex-grow: 1; font-weight: 500; }
         .article-item-arrow { color: #3498db; font-weight: bold; margin-left: 10px; opacity: 0.5; }
         
-        /* ヘッダーの背景色を下の水色と同じ設定に強制固定 */
-        .main-header {
-            background: #3498db !important;
-            color: #ffffff !important;
-            padding: 20px 0;
-            text-align: center;
+        /* トップページのヒントを元にヘッダーを完全に統一 */
+        .main-header { 
+            text-align: center; 
+            padding: 30px 0 !important; 
+            background: #3498db !important; 
+            color: white !important; 
+            border-radius: 0 0 20px 20px !important; 
+            margin-bottom: 20px; 
         }
-        .main-header h1, .main-header p {
-            color: #ffffff !important;
-            margin: 0;
-        }
+        .main-header h1 { font-size: 1.5rem; color: white !important; margin: 0; }
+        .main-header p { font-size: 0.9rem; color: white !important; opacity: 0.9; margin-top: 5px; }
         
         .chapter-header {
             background: #3498db;
@@ -66,6 +66,10 @@
         }
         .chapter-header h1 { font-size: 1.4rem; margin-bottom: 10px; }
         .chapter-header p { font-size: 0.9rem; opacity: 0.9; line-height: 1.5; }
+        
+        /* コンテナの幅をトップページと合わせる場合 */
+        .container { max-width: 600px; margin: 0 auto; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #3498db; font-weight: bold; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -112,7 +116,7 @@
     </div>
 </main>
 
-<footer class="main-footer" style="margin-top: 50px;">
+<footer class="main-footer" style="margin-top: 50px; text-align: center; padding-bottom: 40px;">
     <div class="container">
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
