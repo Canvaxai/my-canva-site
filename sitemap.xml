@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tomokazu-hoshi.github.io/index.html</loc></url>
-
   <url><loc>https://tomokazu-hoshi.github.io/01.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/02.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/03.html</loc></url>
@@ -102,7 +101,6 @@
   <url><loc>https://tomokazu-hoshi.github.io/98.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/99.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/100.html</loc></url>
-
   <url><loc>https://tomokazu-hoshi.github.io/migration-1.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-2.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-3.html</loc></url>
@@ -127,14 +125,12 @@
   <url><loc>https://tomokazu-hoshi.github.io/migration-22.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-23.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-24.html</loc></url>
-
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch1.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch2.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch3.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch4.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch5.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/migration-ch6.html</loc></url>
-
   <url><loc>https://tomokazu-hoshi.github.io/migration-guide.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/minimalist-design-guide.html</loc></url>
   <url><loc>https://tomokazu-hoshi.github.io/niche-keyword-guide.html</loc></url>
