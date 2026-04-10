@@ -18,11 +18,11 @@ body {
     padding: 0 20px;
 }
 
-/* --- ヘッダー (画像準拠のデザイン) --- */
+/* --- 共通ヘッダー (画像準拠の青色) --- */
 .main-header {
     text-align: center;
     padding: 50px 0;
-    background: #5ca1e6; /* 画像に合わせた明るい青色 */
+    background: #5ca1e6; 
     color: white;
     border-radius: 0 0 25px 25px;
     margin-bottom: 30px;
@@ -30,17 +30,18 @@ body {
 
 .main-header h1 {
     font-size: 2.2rem;
-    margin: 0 0 15px 0;
-    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    color: white;
 }
 
 .main-header p {
     font-size: 1rem;
     opacity: 0.9;
     margin: 0;
+    color: white;
 }
 
-/* --- パンくずリスト / 戻るリンク --- */
+/* --- パンくずリスト --- */
 .breadcrumb-nav {
     margin: 20px 0;
 }
@@ -55,50 +56,108 @@ body {
 
 /* --- 記事本文エリア --- */
 .chapter-content {
-    padding: 10px 0;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
 }
 
 .chapter-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #333;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .chapter-content p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    font-size: 1.05rem;
     color: #444;
 }
 
-/* --- インライン記事リンク (矢印スタイル) --- */
-.article-links-inline {
-    font-size: 1.1rem;
-    line-height: 2;
+/* --- カード型記事リスト (写真のデザインを完全再現) --- */
+.category-section {
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
 
-.article-links-inline a {
-    color: #6a76d8;
-    text-decoration: underline;
-}
-
-.article-links-inline span {
+.category-title {
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #333;
-    margin: 0 5px;
+    margin-bottom: 25px;
+}
+
+.article-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-card-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.article-card-item:active {
+    transform: scale(0.98);
+}
+
+/* 青い丸数字 */
+.card-circle-num {
+    background: #3498db;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: #888;
+    display: block;
+    line-height: 1.4;
 }
 
 /* --- 共通フッター --- */
 .main-footer {
     text-align: center;
     padding: 40px 0;
-    color: #888;
+    color: #999;
     font-size: 0.9rem;
-    margin-top: 40px;
 }
 
 /* スマホ対応 */
 @media (max-width: 480px) {
     .main-header h1 { font-size: 1.8rem; }
-    .chapter-content h1 { font-size: 1.8rem; }
-    .article-links-inline { font-size: 1rem; }
+    .card-circle-num { width: 35px; height: 35px; font-size: 1rem; margin-right: 15px; }
+    .card-title { font-size: 0.95rem; }
 }
