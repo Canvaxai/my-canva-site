@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H56XHD5MLW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-H56XHD5MLW');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第4章：コンテンツ移行編 | WordPress移行ガイド</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-<body class="migration-theme">
+</head>
+<body class="migration-page">
 
 <header class="main-header">
     <div class="container">
         <h1>Zero-Cost SEO</h1>
-        <p>特別ガイド：コンテンツ移行</p>
+        <p>特別ガイド：インフラ準備</p>
     </div>
 </header>
 
 <main class="container">
-    <nav>
+    <nav class="breadcrumb-nav" style="margin: 20px 0;">
         <a href="migration-guide.html" class="back-link">← 移行ガイド目次へ戻る</a>
     </nav>
     
-    <div class="chapter-header">
-        <h1>第4章：コンテンツ移行編</h1>
-        <p>100記事のデータをWordPressへ。HTMLから投稿データへの変換、画像の一括インポート、表示崩れのチェックをエンジニアリングします。</p>
-    </div>
+    <article class="post-content">
+        <h1 style="font-size: 2rem; font-weight: bold; margin-top: 0;">第4章：コンテンツ移行編</h1>
+        <p>HTMLからWordPressへのデータ変換とお引っ越し。静的ファイルを動的なデータベースへと最適化して流し込みます。</p>
+    </article>
 
-    <div class="article-list-container">
-        <a href="migration-13.html" class="article-item-card">
-            <span class="article-item-number">13</span>
-            <span class="article-item-title">GitHubのMarkdown/HTMLファイルをWordPressへインポートする方法</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-14.html" class="article-item-card">
-            <span class="article-item-number">14</span>
-            <span class="article-item-title">画像素材の一括アップロードとパスの最適化</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-15.html" class="article-item-card">
-            <span class="article-item-number">15</span>
-            <span class="article-item-title">アイキャッチ画像とメタディスクリプションの再設定</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-
-        <a href="migration-16.html" class="article-item-card">
-            <span class="article-item-number">16</span>
-            <span class="article-item-title">表示崩れのチェック：AIを使った全ページ自動検閲</span>
-            <span class="article-item-arrow">→</span>
-        </a>
-    </div>
+    <section class="category-section">
+        <h2 style="font-size: 1.2rem; font-weight: bold; margin-bottom: 25px;">第4章：全記事リスト</h2>
+        <div class="article-card-list">
+            <a href="migration-13.html" class="migration-article-item">
+                <div class="blue-circle">13</div>
+                <div>
+                    <span class="card-title">HTMLからWordPressへの一括変換テクニック</span>
+                    <span class="card-desc">手動コピペを卒業する、インポートツールの活用術。</span>
+                </div>
+            </a>
+            <a href="migration-14.html" class="migration-article-item">
+                <div class="blue-circle">14</div>
+                <div>
+                    <span class="card-title">画像パスの置換とメディアライブラリの整理</span>
+                    <span class="card-desc">画像URLを新サーバーのパスへ正確に紐付ける。</span>
+                </div>
+            </a>
+            <a href="migration-15.html" class="migration-article-item">
+                <div class="blue-circle">15</div>
+                <div>
+                    <span class="card-title">メタデータ（Title/Description）の完全移行</span>
+                    <span class="card-desc">SEO評価に直結する情報を漏らさず引き継ぐ。</span>
+                </div>
+            </a>
+            <a href="migration-16.html" class="migration-article-item">
+                <div class="blue-circle">16</div>
+                <div>
+                    <span class="card-title">パーマリンク設定の整合性確保</span>
+                    <span class="card-desc">URL構造を変えずにWordPressで再現する設定法。</span>
+                </div>
+            </a>
+        </div>
+    </section>
 </main>
 
-<footer class="footer-text">
+<footer class="footer">
     <div class="container">
         <p>&copy; 2026 Zero-Cost SEO - 星 友和</p>
     </div>
